@@ -42,8 +42,8 @@
       currencyRatesPlugin.sources = config.sources;
     } else {
       currencyRatesPlugin.sources = [
-        require('./currencyRates/bitpay'),
-        require('./currencyRates/bitstamp'),
+        require('./currencyRates/bittylicious'),
+        require('./currencyRates/bittrex'),
       ];
     }
     currencyRatesPlugin.request = config.request || request;
