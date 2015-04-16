@@ -38,3 +38,23 @@ db/testnet/blocks
 
 README.html
 public
+
+.idea/.name
+
+.idea/encodings.xml
+
+.idea/insight-api2.iml
+
+.idea/jsLibraryMappings.xml
+
+.idea/misc.xml
+
+.idea/libraries/insight_api2_node_modules.xml
+
+.idea/modules.xml
+
+.idea/scopes/scope_settings.xml
+
+.idea/vcs.xml
+
+.idea/workspace.xml
