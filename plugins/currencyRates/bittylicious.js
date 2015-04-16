@@ -1,7 +1,7 @@
 var _ = require('lodash');
 
 module.exports.id = 'Bittylicious';
-module.exports.url = 'https://bittylicious.com/api/v1/ticker';
+module.exports.url = 'https://rates.startwallet.com/bittylicious';
 
 var pairs = ["EUR", "GBP"];
 
