@@ -1,3 +1,4 @@
+
 # *insight API*
 
 *insight API* is an open-source bitcoin blockchain REST
@@ -12,6 +13,10 @@ require certain information from the blockchain that bitcoind does not provide.
 A blockchain explorer front-end has been developed on top of *Insight API*. It can
 be downloaded at [Github Insight Repository](https://github.com/bitpay/insight).
 
+## Warning
+  Insight file sync does not work with **bitcoind**  v0.10 
+  In order to use Insigtht you must set the environment variable INSIGHT_FORCE_RPC_SYNC = 1  
+  We are working on `bitcore-node` to replace Insight-api. Check `bitcore-node` on  [github](https://github.com/bitpay/bitcore-node).
 
 ## Prerequisites
 
@@ -31,6 +36,7 @@ bitcoind must be running and must have finished downloading the blockchain **bef
 * **Node.js v0.10.x** - Download and Install [Node.js](http://www.nodejs.org/download/).
 
 * **NPM** - Node.js package manager, should be automatically installed when you get node.js.
+
 
 ## Quick Install
   Check the Prerequisites section above before installing.
@@ -204,23 +210,23 @@ Sample return:
 ``` json
 [
     {
-      address: "n2PuaAguxZqLddRbTnAoAuwKYgN2w2hZk7",
-      txid: "dbfdc2a0d22a8282c4e7be0452d595695f3a39173bed4f48e590877382b112fc",
-      vout: 0,
-      ts: 1401276201,
-      scriptPubKey: "76a914e50575162795cd77366fb80d728e3216bd52deac88ac",
-      amount: 0.001,
-      confirmations: 3
+      "address": "n2PuaAguxZqLddRbTnAoAuwKYgN2w2hZk7",
+      "txid": "dbfdc2a0d22a8282c4e7be0452d595695f3a39173bed4f48e590877382b112fc",
+      "vout": 0,
+      "ts": 1401276201,
+      "scriptPubKey": "76a914e50575162795cd77366fb80d728e3216bd52deac88ac",
+      "amount": 0.001,
+      "confirmations": 3
     },
     {
-      address: "n2PuaAguxZqLddRbTnAoAuwKYgN2w2hZk7",
-      txid: "e2b82af55d64f12fd0dd075d0922ee7d6a300f58fe60a23cbb5831b31d1d58b4",
-      vout: 0,
-      ts: 1401226410,
-      scriptPubKey: "76a914e50575162795cd77366fb80d728e3216bd52deac88ac",
-      amount: 0.001,
-      confirmation: 6
-      confirmationsFromCache: true,
+      "address": "n2PuaAguxZqLddRbTnAoAuwKYgN2w2hZk7",
+      "txid": "e2b82af55d64f12fd0dd075d0922ee7d6a300f58fe60a23cbb5831b31d1d58b4",
+      "vout": 0,
+      "ts": 1401226410,
+      "scriptPubKey": "76a914e50575162795cd77366fb80d728e3216bd52deac88ac",
+      "amount": 0.001,
+      "confirmation": 6,
+      "confirmationsFromCache": true
     }
 ]
 ```
