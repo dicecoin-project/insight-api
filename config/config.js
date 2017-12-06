@@ -25,14 +25,14 @@ if (process.env.INSIGHT_NETWORK === 'livenet') {
   env = 'livenet';
   db = home;
   port = '3000';
-  b_port = '6667';
-  p2p_port = '9247';
+  b_port = '7347';
+  p2p_port = '7247';
 } else {
   env = 'testnet';
   db = home + '/testnet';
   port = '3001';
-  b_port = '16667';
-  p2p_port = '19247';
+  b_port = '17347';
+  p2p_port = '17247';
 }
 port = parseInt(process.env.INSIGHT_PORT) || port;
 
@@ -57,9 +57,9 @@ var isWin = /^win/.test(process.platform);
 var isMac = /^darwin/.test(process.platform);
 var isLinux = /^linux/.test(process.platform);
 if (!dataDir) {
-  if (isWin) dataDir = '%APPDATA%\\StartCOIN-v2\\';
-  if (isMac) dataDir = process.env.HOME + '/Library/Application Support/StartCOIN-v2/';
-  if (isLinux) dataDir = process.env.HOME + '/.startcoin-v2/';
+  if (isWin) dataDir = '%APPDATA%\\DiceCOIN\\';
+  if (isMac) dataDir = process.env.HOME + '/Library/Application Support/DiceCOIN/';
+  if (isLinux) dataDir = process.env.HOME + '/.dicecoin/';
 }
 dataDir += network === 'testnet' ? 'testnet3' : '';
 

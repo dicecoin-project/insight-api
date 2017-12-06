@@ -52,7 +52,7 @@
     "base58-native": "0.1.2",
     "bignum": "*",
     "bitauth": "^0.1.1",
-    "bitcore": "git://github.com/atomicjets/startcore.git#e50e36ed569dd34136c8a3aae0c46682ba801572",
+    "bitcore": "git://github.com/dicecoin-project/dicecore.git",
     "bufferput": "git://github.com/bitpay/node-bufferput.git",
     "buffertools": "*",
     "commander": "^2.3.0",
